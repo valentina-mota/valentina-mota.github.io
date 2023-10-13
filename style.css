@@ -41,7 +41,10 @@ nav {
     top: 50%;
     right: 50px;
     gap: 3rem;
-  
+}
+
+.social-icons-2 {
+    display: none;
 }
 
 .fa.fa-linkedin, .fa.fa-github {
@@ -62,6 +65,21 @@ nav {
     background: #db5a6b;
     color: #1d1b1b;
     font-size: 2.9rem;
+}
+
+.icodeimg {
+    width: 60px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icodethis-logo {
+    width: 100%;
+    background: rgba(255, 0, 0, .4);
+    border-radius: 50%;
 }
 
 h1, h2 {
@@ -117,7 +135,7 @@ section {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 8rem);
     gap: 1.5rem;
-    height: fit-content;
+
 }
 
 .grid__item {
@@ -225,7 +243,7 @@ section {
     margin-bottom: 3rem;
 }
 
-a {
+nav a, .button-cv a {
     text-decoration: none;
     padding: .5rem;
     border-radius: 20px;
@@ -250,11 +268,67 @@ a.button-cv {
 
 footer {
     display: flex;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     margin-top: 4rem;
     margin-bottom: 2rem;
 }
  footer a {
-    background: transparent;
     color: var(--clr-txt);
+    text-decoration: none;
  }
+
+ @media screen and (max-width: 1450px) {
+    .bio-text {
+        font-size: 1rem;
+    }
+ }
+
+ @media screen and (max-width: 950px) {
+
+    body {
+        font-size: 1rem;
+    }
+    
+    main {
+        width: 100%;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+ }
+
+    .social-icons {
+    display: none;
+    }
+
+    .social-icons-2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 1.5rem;
+    padding-top: 12px;
+    margin-right: 38rem;
+    }
+
+    .fa.fa-linkedin, .fa.fa-github {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+}
+
+.fa.fa-github {
+    font-size: 2rem;
+}
+
+.icodeimg {
+    width: 50px;
+    
+}
+
+
